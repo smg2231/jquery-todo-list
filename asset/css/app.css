@@ -49,7 +49,7 @@ li:nth-child(2n) {
 	text-align: center;
 	color: white;
 	display: inline-block;
-	width: 0; 
+	width: 15px; 
 	opacity: 0;
 	transition: 0.2s linear;
 }
