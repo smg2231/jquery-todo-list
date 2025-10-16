@@ -1,13 +1,11 @@
 $(".todoinput").keypress(function(event) {
-	textLimit = 50;
-	if($(this).val().length >= textLimit) {
-		alert("You have reached the text limit of "+textLimit+" characters.");
 	if(event.which === 13) {
 		if($(this).val()==="") return;
+		if($(this).val().length >= 50) return;
 		$("ul").prepend("<li><span class='left'><i class='fa fa-trash'></i></span>  "+$(this).val()+"<span class='right'><i class='fa fa-pencil'></li>");
 		$(this).val("");
+
 	}
-}
 });
 
 $(".fa-plus").on("click", function() {
