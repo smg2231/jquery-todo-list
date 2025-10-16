@@ -29,6 +29,7 @@ ul {
 	margin: 0;
 	padding: 0;
 	position: relative;
+	border: 1px solid rgba(123,123,123,0.5);
 }
 
 li {
@@ -75,7 +76,8 @@ li:hover span{
 	font-size: 18px;
 	padding: 10px 10px 10px 15px;
 	outline: none;
-	/*box-sizing: border-box; <-- This isn't really required for our code*/
+	box-sizing: border-box;
+		color: #0f0c29;/*box-sizing: border-box; <-- This isn't really required for our code*/
 }
 
 .editinput {
