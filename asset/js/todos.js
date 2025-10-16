@@ -1,10 +1,6 @@
-$(".todoinput").keypress(function(event) {
-	if(event.which === 13) {
-		if($(this).val()==="") return;
-		$("ul").prepend("<li><span class='left'><i class='fa fa-trash'></i></span>  "+$(this).val()+"<span class='right'><i class='fa fa-pencil'></li>");
-		$(this).val("");
-	}
-});
+let todoText = $(this).val().trim().substring(0, 50);
+$("ul").prepend("&lt;li&gt;&lt;span class='left'&gt;&lt;i class='fa fa-trash'&gt;&lt;/i&gt;&lt;/span&gt;  " + 
+	todoText + " &lt;span class='right'&gt;&lt;i class='fa fa-pencil'&gt;&lt;/li&gt;");
 
 $(".fa-plus").on("click", function() {
 	$("input").slideToggle();
