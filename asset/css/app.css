@@ -30,12 +30,13 @@ ul {
 	padding: 0;
 	position: relative;
 	border: 1px solid rgba(123,123,123,0.5);
+	background-color:darkcyan;
 }
 
 li {
 	height: 40px;
 	line-height: 40px;
-	color: rgb(230,230,12);
+	color: rgb(255, 255, 232);
 }
 
 li:nth-child(2n) {
