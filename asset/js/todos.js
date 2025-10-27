@@ -2,7 +2,7 @@ $(".todoinput").keypress(function(event) {
 	if(event.which === 13) {
 		if($(this).val()==="") return;
 		if($(this).val().length >= 50) return;
-		$("ul").prepend("<li><span class='left'><i class='fa-solid fa-minus'></i></span>  "+$(this).val()+"<span class='right'><i class='fa solid fa-check'></li>");
+		$("ul").prepend("<li><span class='left'><i class='fa fa-minus'></i></span>  "+$(this).val()+"<span class='right'><i class='fa solid fa-check'></li>");
 		$(this).val("");
 
 	}
@@ -30,11 +30,11 @@ $("ul").on("click", "span.right", function(event) {
 	$(".editinput").keypress(function(e) {
 		if(e.which === 13) {
 			if($(this).val() === "") {
-				parent.html("<span class='left'><i class='fa-solid fa-minus'></i></span><span class='text'>  "+oldVal+"</span><span class='right'><i class='fa solid fa-check'>");	
+				parent.html("<span class='left'><i class='fa fa-minus'></i></span><span class='text'>  "+oldVal+"</span><span class='right'><i class='fa solid fa-check'>");	
 			}
 			else {
 				var newVal = $(this).val();
-				parent.html("<span class='left'><i class='fa-solid fa-minus'></i></span><span class='text'>  "+newVal+"</span><span class='right'><i class='fa solid fa-check'>");
+				parent.html("<span class='left'><i class='fa fa-minus'></i></span><span class='text'>  "+newVal+"</span><span class='right'><i class='fa solid fa-check'>");
 			}
 		}
 		e.stopPropagation();
